@@ -8,6 +8,7 @@ sys.setrecursionlimit(2000)
 
 def poupanca(saldo, meses, valor_investido_mensal, taxa_juros, marco ):
     #comforme o saldo vai aumentando ele compara com o marco expecificado, caso n seja maior ou igual ele continuara investindo e aplicando o juros  
+    
     if saldo>= marco:
         anos = meses // 12
         meses_restantes = meses % 12
