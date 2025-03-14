@@ -19,12 +19,12 @@ def investimento_bitcoin(bitcoins_na_conta=0, mes=0, total_investido=0, metas_at
     
     valor_bitcoin = 664484  # Meta de 1 Bitcoin
     investimento_mensal = 250
-    rendimento = 0.0005
+
     metas = {100000, 1000000, valor_bitcoin}  
     
     cotacao_atual = valores_do_bitcoin_2024[mes % 12] 
     investimento_em_bitcoin = investimento_mensal / cotacao_atual  # Converte o valor em reais para Bitcoin
-    bitcoins_na_conta *= (1 + rendimento) 
+    
     bitcoins_na_conta += investimento_em_bitcoin  
     total_investido += investimento_mensal  
     
